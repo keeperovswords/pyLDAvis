@@ -46,7 +46,7 @@ var LDAvis = function(to_select, data_or_file_name, color1, color2) {
             top: 30,
             right: 30,
             bottom: 70,
-            left: 30
+            left: 100
         },
 
         mdswidth = 530,
@@ -1027,7 +1027,7 @@ var LDAvis = function(to_select, data_or_file_name, color1, color2) {
             // Change Total Frequency bars
             d3.selectAll(to_select + " .bar-totals")
                 .data(dat3)
-                .attr("x", 0)
+                .attr("x", 110)
                 .attr("y", function(d) {
                     return y(d.Term);
                 })
@@ -1041,7 +1041,7 @@ var LDAvis = function(to_select, data_or_file_name, color1, color2) {
             // Change word labels
             d3.selectAll(to_select + " .terms")
                 .data(dat3)
-                .attr("x", -5)
+                .attr("x", 100)
                 .attr("y", function(d) {
                     return y(d.Term) + 12;
                 })
@@ -1059,7 +1059,7 @@ var LDAvis = function(to_select, data_or_file_name, color1, color2) {
                 .enter()
                 .append("rect")
                 .attr("class", "overlay")
-                .attr("x", 0)
+                .attr("x", 110)
                 .attr("y", function(d) {
                     return y(d.Term);
                 })
