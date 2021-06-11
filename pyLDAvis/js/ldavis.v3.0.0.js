@@ -110,7 +110,7 @@ var LDAvis = function(to_select, data_or_file_name, color1, color2) {
         K = data['mdsDat'].x.length;
 
         // R is the number of top relevant (or salient) words whose bars we display
-        R = Math.min(data['R'], 30);
+        R = Math.min(data['R'], 100);
 
         // a (K x 5) matrix with columns x, y, topics, Freq, cluster (where x and y are locations for left panel)
         mdsData = [];
